@@ -1,0 +1,14 @@
+hi
+
+{{book.title}}
+
+<form action = "/books/{{book._id}}/reviews/create" method = "post">
+
+	<label for = "reviewer">  </label>
+	<input  type = "text" id = "reviewer" name = "reviewer">
+
+	<label>  What do you have to say?  </label>
+	<textarea name = "content" id = "" cols = "30" rows = "10"> </textarea>
+	
+	<button type = "submit"> Post it </button>
+</form>

@@ -59,6 +59,8 @@ app.use('/', index);
 const blah = require('./routes/bookRoutes');
 app.use('/', blah);
 
+const reviewRouter = require('./routes/reviewRouter');
+app.use('/', reviewRouter);
 
 
 

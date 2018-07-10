@@ -15,3 +15,15 @@
 <form action="/books/{{_id}}/delete" method="post">
 <button>Delete This Book</button>
 </form>
+
+<a href = "books/{{_id}}/reviews/new "> Add a Review for this Review </a>
+
+<div>
+	<h2> Reviews for this book: </h2>
+	</hr>
+	{{#each review}}
+		<h4> {{this.reviewer}} </h4>
+		<p> {{this.content}}</p>
+		<hr>
+	{{/each}}
+</div>
